@@ -38,15 +38,6 @@ int findIndex(int numToFind, int arrayToSearchThrough[], int minArrayIndex, int 
     
     int midpoint = (minArrayIndex + maxArrayIndex) / 2;
     
-    //printf("midpoint = %d value = %d to find %d\n\n", midpoint, arrayToSearchThrough[midpoint], numToFind);
-    
-    //    if ((numToFind < arrayToSearchThrough[minArrayIndex]) || (numToFind > arrayToSearchThrough[maxArrayIndex])){
-    //        indexRange indexRangeWithCorrectValue;
-    //        indexRangeWithCorrectValue.firstOccurrence = -1;
-    //        indexRangeWithCorrectValue.numberOfTimes = 0;
-    //        return indexRangeWithCorrectValue;
-    //    }
-    
     if (maxArrayIndex < minArrayIndex) {
         indexOfNumToFind = -1;
         return indexOfNumToFind;
@@ -72,15 +63,6 @@ indexRange findBinary(int numToFind, int arrayToSearchThrough[], int minArrayInd
     indexRange range;
     
     int midpoint = (minArrayIndex + maxArrayIndex) / 2;
-    
-    //printf("midpoint = %d value = %d to find %d\n\n", midpoint, arrayToSearchThrough[midpoint], numToFind);
-    
-//    if ((numToFind < arrayToSearchThrough[minArrayIndex]) || (numToFind > arrayToSearchThrough[maxArrayIndex])){
-//        indexRange indexRangeWithCorrectValue;
-//        indexRangeWithCorrectValue.firstOccurrence = -1;
-//        indexRangeWithCorrectValue.numberOfTimes = 0;
-//        return indexRangeWithCorrectValue;
-//    }
 
     if (maxArrayIndex < minArrayIndex) {
         range.firstOccurrence = -1;
